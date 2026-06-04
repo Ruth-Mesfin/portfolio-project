@@ -1,90 +1,271 @@
 <!DOCTYPE html>
-<html>
-<title>RUTH MESFIN</title>
-
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width,initial-scale=1">
+  <title>RUTH MESFIN Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ruth Mesfin - Software Engineering student at Hilcoe University, video editor and social media manager">
+  <!-- Google Fonts + Font Awesome for clean icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body body style="font-family: Arial; background-color: rgb(245, 245, 220); margin: 0;">
+<body>
 
-  <div style="background-color: #4b301d; color: rgb(248, 243, 243); padding: 20px; text-align: center;">
-    <h1>RUTH MESFIN</h1>	
+  <!-- Header Section -->
+  <div class="header">
+    <h1>RUTH MESFIN</h1>    
   </div>
 
-  <div style="background-color: #dfc9ae; padding: 10px; text-align: center;">
-    
-    <a href="index.html" style="font-weight:bold; color:#4b301d; ">Home</a> |
-    <a href="about.html" style="font-weight:bold; color:#4b301d; ">Education</a> |
-    <a href="contact.html" style="font-weight:bold; color:#4b301d; ">Contact</a>
- <br><br><br>
-<section style="padding: 20px;">
-
-
-  <div style="display: flex; align-items: center; justify-content: center; gap: 110px; ">
-    
-    <img src="/p2.jpg" alt="Profile Picture" width="175" style="border-radius: 30%;"><br><br>
-
-   <br><br><br><br>
-    <div style="border: 2px solid #4b301d; 
-                background-color: #f7eadc; 
-                padding: 20px; 
-                width: 40%; 
-                line-height: 1.5;">
-                  <h2 style="color: #502506; text-align: center;">About Me</h2>
-      Hello, I am Ruth Mesfin. I am a highly motivated first year student at Hilcoe University,<br>
-      pursuing a bachelor of science in software engineering. Eager to dive into the world <br>
-      of programming and technology. I have a strong aptitude for innovation. I am a great <br>
-      video editor and social media manager.
-    </div>
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <nav>
+      <a href="#home"><i class="fas fa-home"></i> Home</a>
+      <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+      <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
+      <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
   </div>
-</section><br><br><br>
 
-  <div style="padding: 20px; text-align: center; background-color:#f7eadc;">
-  <h2 style="color:#4b301d;">My Favorite Books</h2>
-  
-  <!-- Flexbox container for side-by-side layout -->
-  <div style="display: flex; justify-content: center; gap: 20px;">
-
-    <!-- Book 1 -->
-    <div style="background-color: #fff; padding: 10px; border: 1px solid #ccc; width: 150px; text-align: center;">
-      <a href="https://www.goodreads.com/book/show/60556912-the-housemaid?ref=nav_sb_ss_2_9" target="_blank">
-        <img src="/housemaid.jpg" alt="The Housemaid" width="120">
-      </a>
-      <p style="color:#4b301d; font-weight:bold;">The Housemaid</p>
+  <!-- Home / About Section -->
+  <section id="home" class="about-section">
+    <div class="about-container">
+      <img src="/p2.jpg" alt="Ruth Mesfin profile portrait" class="profile-pic">
+      <div class="about-box">
+        <h2>About Me</h2>
+        <p>Hello, I am Ruth Mesfin. I am a highly motivated first year student at Hilcoe University,<br>
+        pursuing a bachelor of science in software engineering. Eager to dive into the world <br>
+        of programming and technology. I have a strong aptitude for innovation. I am a great <br>
+        video editor and social media manager.</p>
+      </div>
     </div>
+  </section>
 
-    <!-- Book 2 -->
-    <div style="background-color: #fff; padding: 10px; border: 1px solid #ccc; width: 150px; text-align: center;">
-      <a href="https://www.goodreads.com/search?q=never+lie&ref=nav_sb_noss_l_9" target="_blank">
-        <img src="/neverliee.jpg" alt="Never Lie" width="120">
-      </a>
-      <p style="color:#4b301d; font-weight:bold;">Never Lie</p>
+  <!-- Skills Section (NEW) -->
+  <section id="skills" class="skills-section">
+    <h2> My Skills</h2>
+    <div class="skills-container">
+      <!-- Technical Skills -->
+      <div class="skills-category">
+        <div class="category-header">
+         
+          <h3>Technical / Software</h3>
+        </div>
+        <div class="skills-list">
+          <span class="skill-tag"> Python</span>
+          <span class="skill-tag"> JavaScript</span>
+          <span class="skill-tag"> HTML5</span>
+          <span class="skill-tag"> CSS3</span>
+          <span class="skill-tag"> Git & GitHub</span>
+          <span class="skill-tag"> SQL Basics</span>
+        </div>
+      </div>
+
+      <!-- Video Editing Skills -->
+      <div class="skills-category">
+        <div class="category-header">
+          
+          <h3>Video Editing</h3>
+        </div>
+        <div class="skills-list">
+          <!-- fas = Font Awesome Solid (filled icons
+               far = Font Awesome Regular (outline icons
+           fab = Font Awesome Brand (company logos like GitHub, Twitter, etc.)
+    fa-NAME = the specific icon you want (home, code, video, etc. -->
+          <span class="skill-tag"> Adobe Premiere Pro</span> 
+          <span class="skill-tag"> DaVinci Resolve</span>
+          <span class="skill-tag"> CapCut</span>
+          <span class="skill-tag"> Audio Sync & Mixing</span>
+          <span class="skill-tag"> Motion Graphics</span>
+        </div>
+      </div>
+
+      <!-- Social Media Management -->
+      <div class="skills-category">
+        <div class="category-header">
+          <i class="fas fa-chart-simple"></i>
+          <h3>Social Media Management</h3>
+        </div>
+        <div class="skills-list">
+          <span class="skill-tag"> Instagram Growth</span>
+          <span class="skill-tag"> TikTok Strategy</span>
+          <span class="skill-tag"> Meta Business Suite</span>
+          <span class="skill-tag"> Content Planning</span>
+          <span class="skill-tag"> Analytics & Reporting</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Book 3 -->
-    <div style="background-color: #fff; padding: 10px; border: 1px solid #ccc; width: 150px; text-align: center;">
-      <a href="https://www.goodreads.com/book/show/53550025-emegua-amharic-edition?ac=1&from_search=true&qid=pSUYzUPva8&rank=3" target="_blank">
-        <img src="/emegua.jpg" alt="Emegua" width="120">
-      </a>
-      <p style="color:#4b301d; font-weight:bold;">Emegua</p>
+  <!-- Projects Section (NEW) -->
+  <section id="projects" class="projects-section">
+    <h2><i class="fas fa-star-of-life"></i> Featured Work</h2>
+    <p class="section-subtitle">A glimpse of what I've built and created</p>
+    
+    <div class="projects-container">
+      <!-- Project 1: Software Project -->
+      <div class="project-card">
+        <div class="project-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Cafe Site</h3>
+        <p class="project-category">Software Project</p>
+        <p>A responsive student dashboard interface built with HTML and CSS. Features dark/light mode and interactive elements.</p>
+        <div class="project-tech">
+          <span>HTML5</span>
+          <span>CSS3</span>
+      
+        </div>
+        <a href="https://cafe-site-weld.vercel.app/" class="project-link" target="_blank">View Project →</a>
+      </div>
+
+      <!-- Project 2: Video Editing Demo -->
+      <div class="project-card">
+        <div class="project-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <h3>ZenWell</h3>
+        <p class="project-category">Figma Design</p>
+        <p>Figma design for ZenWell a maintenance-focused company .</p>
+        <div class="project-tech">
+          <span>Premiere Pro</span>
+          <span>After Effects</span>
+        </div>
+        <a href="https://zen-well.vercel.app/" class="project-link" target="_blank">Watch Demo →</a>
+      </div>
+
+      <!-- Project 3: Social Media Campaign -->
+      <div class="project-card">
+        <div class="project-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>To Do app</h3>
+        <p class="project-category">Website Development</p>
+        <p>A simple yet effective to-do list application built with modern web technologies.</p>
+        <div class="project-tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="https://github.com/Ruth-Mesfin/ToDoApp" class="project-link" target="_blank">Try it →</a>
+      </div>
+
+      <!-- Project 4: Coding Project -->
+      <div class="project-card">
+        <div class="project-icon">
+          <i class="fas fa-calculator"></i>
+        </div>
+        <h3>Tic-Tac Toe</h3>
+        <p class="project-category">Software Project</p>
+        <p>A classic Tic-Tac-Toe game implemented with HTML, CSS, and JavaScript.</p>
+        <div class="project-tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <a href="https://github.com/Ruth-Mesfin/Tic-Tac-Toe" class="project-link" target="_blank">Play Game ? </a>
+      </div>
+
+      <!-- Project 5: Video Montage -->
+      <div class="project-card">
+        <div class="project-icon">
+          <i class="fas fa-music"></i>
+        </div>
+        <h3>Event Highlight Reel</h3>
+        <p class="project-category">Video Editing</p>
+        <p>2-minute highlight video from a university tech event, featuring multi-cam editing, color grading, and custom transitions.</p>
+        <div class="project-tech">
+          <span>DaVinci</span>
+          <span>Color Grading</span>
+        </div>
+        <a href="#" class="project-link">Watch →</a>
+      </div>
+
+      <!-- Project 6: Content Calendar -->
+      <div class="project-card">
+        <div class="project-icon">
+          <i class="fas fa-calendar-check"></i>
+        </div>
+        <h3>30-Day Content Plan</h3>
+        <p class="project-category">Social Media Management</p>
+        <p>Complete content calendar for a lifestyle brand including post ideas, captions, hashtag research, and engagement strategy.</p>
+        <div class="project-tech">
+          <span>Notion</span>
+          <span>Canva</span>
+          <span>Later</span>
+        </div>
+        <a href="#" class="project-link">View Plan →</a>
+      </div>
     </div>
-  </div><br><br><br><br><br>
-</div>
-  
-  <div style="margin-top: 40px; text-align: center;">
-    <h2 style="color:#4b301d;">My Projects</h2>
-    <ol style="display: inline-block; text-align: left;">
-      <li>Personal Portfolio Website</li>
-      <li>Responsive Landing Page for a Beauty Brand</li>
-      <li>GitHub Repository Contributions</li>
-    </ol>
-  
-</div>
+  </section>
 
-<br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br></div > 
-<footer style="background-color: #4b301d; color: white; text-align: center; padding: 10px;">
-    <p>© 2025 Ruth Mesfin. All rights reserved.</p>
-</footer>
-  </body>
-  </html
+  <!-- Education Section -->
+  <section id="education" class="books-section">
+    <div class="section-header">
+      <h2><i class="fas fa-graduation-cap"></i> Education & Growth</h2>
+     
+    <div class="books-container">
+      <!-- Card 1: ALX -->
+      <div class="book-card">
+        
+        <img src="/alx.jpg" alt="ALX Africa logo" class="book-img">
+        <p>ALX Africa</p>
+        <span class="card-description">Software Engineering Program</span>
+        <small>Intensive peer-learning focused on full-stack development</small>
+      </div>
+      <!-- Card 2: Hilcoe University -->
+      <div class="book-card">
+        
+        <img src="/hilcoe.jpg" alt="Hilcoe University campus" class="book-img">
+        <p>Hilcoe University</p>
+        <span class="card-description">B.Sc. Software Engineering</span>
+        <small>First-year student · Building strong CS fundamentals</small>
+      </div>
+      <!-- Card 3: Nexus -->
+      <div class="book-card">
+       
+        <img src="/nexus.jpg" alt="Nexus innovation program" class="book-img">
+        <p>Nexus Program</p>
+        <span class="card-description">Innovation & Tech</span>
+        <small>Hands-on projects & collaborative learning environment</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2><i class="fas fa-paper-plane"></i> Let's Connect</h2>
+    <p class="contact-subtitle">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+    
+    <form action="#" method="post" class="contact-form">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="e.g. Ruth Mesfin" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="hello@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write something creative or ask about software engineering, video editing..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message </button>
+    </form>
+
+    <div class="social-links">
+      <a href="https://github.com/Ruth-Mesfin" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://t.me/REGZI342" target="_blank" rel="noopener"><i class="fab fa-telegram-plane"></i> Telegram</a>
+    </div>
+    <p class="contact-signature"> Ruth Mesfin — building digital experiences & creative solutions</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Ruth Mesfin. All rights reserved. Crafted with warmth & passion.</p>
+  </footer>
+
+</body>
+</html>
